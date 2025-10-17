@@ -7,7 +7,7 @@
 
 A modern .NET MAUI application that tracks user location and displays it as a real-time heatmap visualization on an interactive map. Built with cross-platform support for Android, iOS, Windows, and macOS.
 
-![App Screenshot](https://drive.google.com/file/d/1sJc8f4qvRy30LWEMP12y4UoL787mgnwC/view?usp=sharing)
+![App Screenshot](Screenshot.png)
 
 ## ✨ Features
 
