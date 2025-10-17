@@ -1,6 +1,7 @@
 using LocationHeatmap.Controls;
 using LocationHeatmap.Services;
 using Microsoft.Maui.Controls.Maps;
+using Microsoft.Maui.Essentials;
 using System.ComponentModel;
 using System.Linq;
 using System.Threading.Tasks;
