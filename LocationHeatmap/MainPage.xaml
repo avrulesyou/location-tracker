@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:maps="clr-namespace:Microsoft.Maui.Controls.Maps;assembly=Microsoft.Maui.Controls.Maps"
+             x:Class="LocationHeatmap.MainPage"
+             Title="Location Heatmap">
+
+    <Grid>
+        <maps:Map x:Name="map" 
+                  PropertyChanged="OnMapPropertyChanged"/>
+
+        <VerticalStackLayout Spacing="10" 
+                             Margin="20"
+                             VerticalOptions="End"
+                             HorizontalOptions="Center">
+            <HorizontalStackLayout Spacing="10">
+                <Button x:Name="StartButton"
+                        Text="Start Tracking" 
+                        Clicked="OnStartTrackingClicked"
+                        BackgroundColor="SeaGreen"
+                        TextColor="White"
+                        WidthRequest="150"
+                        CornerRadius="20"/>
+
+                <Button x:Name="StopButton"
+                        Text="Stop Tracking" 
+                        Clicked="OnStopTrackingClicked"
+                        BackgroundColor="IndianRed"
+                        TextColor="White"
+                        WidthRequest="150"
+                        CornerRadius="20"
+                        IsEnabled="False"/>
+            </HorizontalStackLayout>
+
+            <Button x:Name="ClearButton"
+                    Text="Clear All Data" 
+                    Clicked="OnClearDataClicked"
+                    BackgroundColor="SlateGray"
+                    TextColor="White"
+                    CornerRadius="20"/>
+        </VerticalStackLayout>
+    </Grid>
+
+</ContentPage>
